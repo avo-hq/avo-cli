@@ -63,8 +63,7 @@ module Avo
 
           # ap scan
 
-          say "Scan finished!"
-          puts ""
+          say "Scan finished!\n"
 
           if scan.errors?
             yell "We found a couple of errors."
