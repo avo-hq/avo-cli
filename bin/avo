@@ -68,7 +68,7 @@ module Avo
 
           if scan.errors?
             yell "We found a couple of errors."
-            ap scan.errors
+            ap scan.error_messages
           else
             say "No errors found. Good job!"
           end
