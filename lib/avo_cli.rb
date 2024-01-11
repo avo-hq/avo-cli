@@ -19,5 +19,5 @@ loader.inflector.inflect(
 loader.setup
 
 module AvoCli
-  PACKED = !File.exist?("../spec")
+  PACKED = !File.exist?("#{__dir__}/../spec")
 end
