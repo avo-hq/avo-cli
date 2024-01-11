@@ -1,6 +1,6 @@
 RSpec.describe "ResourceScanner", type: :feature do
   it "returns all resource files" do
-    scanner = AvoLinter::Scanners::ResourceScanner.new(path: DUMMY_PATH, scan:)
+    scanner = AvoLinter::Scanners::ResourceScanner.new(path:, scan:)
     files = scanner.send(:resource_files)
 
     expect(files.keys).to eq([

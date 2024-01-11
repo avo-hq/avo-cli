@@ -13,6 +13,8 @@ class AvoLinter::Rules::Base
     self
   end
 
+  def message = self.class::MESSAGE
+
   private
 
   def get_class_body
