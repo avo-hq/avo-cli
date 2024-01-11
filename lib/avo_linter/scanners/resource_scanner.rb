@@ -27,8 +27,13 @@ class AvoLinter::Scanners::ResourceScanner < AvoLinter::Scanners::Base
   end
 
   def resource_file_paths
-    [
-      "/Users/adrian/work/avocado/gems/avo-linter/account.rb"
-    ]
+    all_files = []
+
+    Dir.glob(File.join(path, *AvoLinter::Scanner::AVO_PATHS[:resources])).each do |file|
+      next if File.directory?(file)
+      all_files << file
+    end
+
+    all_files
   end
 end
