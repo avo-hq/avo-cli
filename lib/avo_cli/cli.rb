@@ -1,6 +1,4 @@
-module AvoLinter
-  VERSION = "0.0.1"
-
+module AvoCli
   module CLI
     module Commands
       extend Dry::CLI::Registry
@@ -25,7 +23,11 @@ module AvoLinter
         desc "Print version"
 
         def call(*)
-          puts VERSION
+          if AvoCli::PACKED
+            puts AvoCli::VERSION
+          else
+            puts "#{AvoCli::VERSION}-development"
+          end
         end
       end
 
@@ -35,9 +37,7 @@ module AvoLinter
         option :path, aliases: ["-p"], required: false, desc: "Path of your Rails app"
 
         def call(**)
-          scan = ::AvoLinter::Scanner.scan
-
-          # ap scan
+          scan = ::AvoCli::Scanner.scan
 
           say "Scan finished!\n"
 
@@ -57,4 +57,4 @@ module AvoLinter
   end
 end
 
-Dry::CLI.new(AvoLinter::CLI::Commands).call
+Dry::CLI.new(AvoCli::CLI::Commands).call

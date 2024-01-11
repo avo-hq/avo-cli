@@ -1,4 +1,4 @@
-class AvoLinter::Scanner
+class AvoCli::Scanner
   AVO_PATHS = {
     actions: ["app", "avo", "actions", "*.rb"],
     config: ["config", "*.rb"],
@@ -16,7 +16,7 @@ class AvoLinter::Scanner
 
   def self.scan(path: Dir.pwd)
     scan = new
-    AvoLinter::Scanners::ResourceScanner.new(path:, scan:).scan!
+    AvoCli::Scanners::ResourceScanner.new(path:, scan:).scan!
     scan
   end
 

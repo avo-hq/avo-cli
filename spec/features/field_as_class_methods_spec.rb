@@ -14,9 +14,9 @@ RSpec.describe "Fields as class methods", type: :feature do
       RUBY
     }
     it "should return an error" do
-      scanner = AvoLinter::Scanners::ResourceScanner.new(path:, scan:)
+      scanner = AvoCli::Scanners::ResourceScanner.new(path:, scan:)
       scanner.scan!
-      expect(scan.error_messages).to eq([AvoLinter::Rules::FieldsAsClassMethods::MESSAGE])
+      expect(scan.error_messages).to eq([AvoCli::Rules::FieldsAsClassMethods::MESSAGE])
     end
   end
 end

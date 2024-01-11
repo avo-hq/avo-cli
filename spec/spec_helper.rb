@@ -14,7 +14,7 @@
 #
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
-require_relative "../lib/avo_linter"
+require_relative "../lib/avo_cli"
 
 PROJECT_ROOT = File.expand_path(File.join(__dir__, "..").to_s).to_s
 DUMMY_PATH = File.join(PROJECT_ROOT, "spec", "dummy").to_s

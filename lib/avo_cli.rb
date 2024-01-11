@@ -18,5 +18,6 @@ loader.inflector.inflect(
 )
 loader.setup
 
-module AvoLinter
+module AvoCli
+  PACKED = File.exist?("../spec")
 end

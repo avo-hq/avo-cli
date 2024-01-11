@@ -1,4 +1,4 @@
-class AvoLinter::Rules::Base
+class AvoCli::Rules::Base
   attr_reader :contents
   attr_reader :errors
 
