@@ -3,8 +3,8 @@ require_relative "lib/avo_cli/version"
 Gem::Specification.new do |spec|
   spec.name        = "avo-cli"
   spec.version     = AvoCli::VERSION
-  spec.summary     = "Discontinued in favor of avo-cli"
-  spec.description = "Discontinued in favor of avo-cli"
+  spec.summary     = "CLI to help with common tasks for Avo CMS such as linting."
+  spec.description = "CLI to help with common tasks for Avo CMS such as linting."
   spec.authors     = ["Adrian Marin"]
   spec.email       = "adrian@adrianthedev.com"
   spec.files       = Dir["{bin,lib}/**/*", "LICENSE.MD", "readme.md", "avo-cli.gemspec", "Gemfile", "Gemfile.lock", "linter.png"]
