@@ -23,3 +23,5 @@ log/*.log
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+avo-cli-*.gem
