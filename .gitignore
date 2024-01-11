@@ -1,0 +1,25 @@
+.bundle/
+.DS_Store
+log/*.log
+
+
+# Ignore bundler config.
+/.bundle
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore uploaded files in development.
+/storage/*
+!/storage/.keep
+
+/public/assets
+.byebug_history
+
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity

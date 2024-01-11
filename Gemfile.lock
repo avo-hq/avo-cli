@@ -1,0 +1,62 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (7.0.8)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+    ast (2.4.2)
+    awesome_print (1.9.2)
+    concurrent-ruby (1.2.2)
+    dry-cli (1.0.0)
+    dry-initializer (3.1.1)
+    i18n (1.14.1)
+      concurrent-ruby (~> 1.0)
+    language_server-protocol (3.17.0.3)
+    minitest (5.20.0)
+    paint (2.3.0)
+    parser (3.3.0.2)
+      ast (~> 2.4.1)
+      racc
+    parser-prism (0.1.0)
+      parser
+      prism
+    pastel (0.8.0)
+      tty-color (~> 0.5)
+    prism (0.19.0)
+    racc (1.7.3)
+    ruby-lsp (0.13.2)
+      language_server-protocol (~> 3.17.0)
+      prism (>= 0.19.0, < 0.20)
+      sorbet-runtime (>= 0.5.5685)
+    sorbet-runtime (0.5.11180)
+    tty-color (0.6.0)
+    tty-command (0.10.1)
+      pastel (~> 0.8)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
+    zeitwerk (2.6.12)
+
+PLATFORMS
+  arm64-darwin-23
+  ruby
+
+DEPENDENCIES
+  activesupport (> 7.0.4, < 7.1.0)
+  awesome_print
+  dry-cli
+  dry-initializer
+  paint
+  parser
+  parser-prism
+  prism
+  ruby-lsp
+  tty-command
+  zeitwerk
+
+RUBY VERSION
+   ruby 3.3.0p0
+
+BUNDLED WITH
+   2.5.3
